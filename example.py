@@ -1,16 +1,12 @@
 import deepupil
 import cv2
 
-
-
-
 eye_tracker = deepupil.DeePupil()
 
 cap = cv2.VideoCapture(0)
 ret = True
 while ret == True:
-
-    ret,frame = cap.read()
+    ret, frame = cap.read()
 
     frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
@@ -25,4 +21,3 @@ while ret == True:
     cv2.imshow('DeepPupil', im_with_keypoints)
 
     cv2.waitKey(1)
-
