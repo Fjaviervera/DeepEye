@@ -1,7 +1,7 @@
 import deepupil
 import cv2
 
-eye_tracker = deepupil.DeePupil()
+eye_tracker = deepeye.DeepEye()
 
 cap = cv2.VideoCapture(0)
 ret = True
@@ -18,6 +18,6 @@ while ret == True:
                                    (int(coords[0]), int(coords[1])), 8,
                                    (0, 0, 255), 2)
 
-    cv2.imshow('DeepPupil', im_with_keypoints)
+    cv2.imshow('DeepEye', im_with_keypoints)
 
     cv2.waitKey(1)
