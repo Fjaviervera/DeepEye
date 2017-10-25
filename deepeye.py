@@ -149,7 +149,7 @@ class Network:
             return x
 
 
-class DeePupil:
+class DeepEye:
     def __init__(self, deep=2, layers=16, model='models/default.ckpt'):
 
         self.sess = tf.Session()
