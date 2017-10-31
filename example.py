@@ -1,4 +1,4 @@
-import deepupil
+import deepeye
 import cv2
 
 eye_tracker = deepeye.DeepEye()
