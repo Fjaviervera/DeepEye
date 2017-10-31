@@ -22,7 +22,7 @@ class Network:
     def conv1x1(self, x, filters):
         self.conv1x1_counter += 1
         with tf.variable_scope('Last_conv1x1_%d' % (self.conv1x1_counter), reuse=self.reuse):
-            print 'Last_conv1x1_%d' % (self.conv1x1_counter)
+            print('Last_conv1x1_%d' % (self.conv1x1_counter))
 
             x = tf.layers.conv2d(x, filters, [1, 1], padding='SAME')
 
@@ -32,7 +32,7 @@ class Network:
         self.conv_counter += 1
 
         with tf.variable_scope('conv_unit_%d' % (self.conv_counter), reuse=self.reuse):
-            print 'conv_unit_%d' % (self.conv_counter)
+            print('conv_unit_%d' % (self.conv_counter))
 
             x_orig = x
 
@@ -54,7 +54,7 @@ class Network:
     def stride_unit(self, x, filters_in, filters_out):
         self.stride_counter += 1
         with tf.variable_scope('stride_unit_%d' % (self.stride_counter), reuse=self.reuse):
-            print 'stride_unit_%d' % (self.stride_counter)
+            print('stride_unit_%d' % (self.stride_counter))
 
             x_orig = x
 
@@ -100,7 +100,7 @@ class Network:
     def aspp(self, x, filters):
         self.atrous_counter += 1
         with tf.variable_scope('atrous_unit_%d' % (self.atrous_counter), reuse=self.reuse):
-            print 'atrous_unit_%d' % (self.atrous_counter)
+            print('atrous_unit_%d' % (self.atrous_counter))
 
             x_1 = self.atrous_unit(x, filters, 4)
             x_2 = self.atrous_unit(x, filters, 8)
@@ -126,7 +126,7 @@ class Network:
             return x
 
     def build_net(self):
-        print self.name
+        print(self.name)
         with tf.variable_scope(self.name, reuse=self.reuse):
             
             x = tf.reshape(self.imgs, [1, tf.shape(self.imgs)[0], tf.shape(self.imgs)[1], 1])
