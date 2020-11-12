@@ -12,8 +12,6 @@ while ret == True:
 
     coords = eye_tracker.run(frame_gray)
 
-    print coords
-
     im_with_keypoints = cv2.circle(frame,
                                    (int(coords[0]), int(coords[1])), 8,
                                    (0, 0, 255), 2)
