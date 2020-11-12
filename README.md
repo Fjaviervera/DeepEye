@@ -22,3 +22,7 @@ The best way to use DeepEye with a webcam is using a eye localization algorithm,
 Example video of DeepEye:
 
 https://youtu.be/vKiUue0kpHw
+
+This repository is based on the following publication:
+
+Vera-Olmos, F. J., Pardo, E., Melero, H., & Malpica, N. (2019). DeepEye: Deep convolutional network for pupil detection in real environments. Integrated Computer-Aided Engineering, 26(1), 85-95.
