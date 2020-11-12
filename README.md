@@ -1,10 +1,12 @@
 # DeepEye
 DeepEye: Deep Convolutional Network for Pupil Detection in real Environment
 
-Requirements:
+## Requirements:
 
 Tensorflow 1.13
 OpenCV
+
+## Installing Steps
 
 The Best way to get it working:
 
@@ -22,6 +24,8 @@ The best way to use DeepEye with a webcam is using a eye localization algorithm,
 Example video of DeepEye:
 
 https://youtu.be/vKiUue0kpHw
+
+##Publication
 
 This repository is based on the following publication:
 
