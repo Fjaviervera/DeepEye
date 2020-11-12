@@ -3,8 +3,8 @@ DeepEye: Deep Convolutional Network for Pupil Detection in real Environment
 
 ## Requirements:
 
-Tensorflow 1.13
-OpenCV
+    Tensorflow 1.13
+    OpenCV
 
 ## Installing Steps
 
@@ -25,7 +25,7 @@ Example video of DeepEye:
 
 https://youtu.be/vKiUue0kpHw
 
-##Publication
+## Publication
 
 This repository is based on the following publication:
 
