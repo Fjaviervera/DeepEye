@@ -25,6 +25,8 @@ Example video of DeepEye:
 
 https://youtu.be/vKiUue0kpHw
 
+https://youtu.be/JZQr6DqhQkg
+
 ## Publication
 
 This repository is based on the following publication:
