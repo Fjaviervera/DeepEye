@@ -21,7 +21,7 @@ Then employ this venv to run the example.py
 
 The best way to use DeepEye with a webcam is using a eye localization algorithm, such as opencv with cascade or using another neural network. 
 
-Example video of DeepEye:
+## Videos
 
 https://youtu.be/vKiUue0kpHw
 
